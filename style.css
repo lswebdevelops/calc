@@ -66,7 +66,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: right;
-    padding-right: 5px;
+    /* padding-right: 5px; */
 }
 h1{
     color: rgb(162, 162, 162);
@@ -75,8 +75,10 @@ h1{
     text-align: left;
 
 }
-#headNotes{
-    padding: 10px;
+#display{
+    padding: 10px 19px 10px 0;
+    height: 15px;
+
 }
 @font-face{
     font-family: waterfall;
@@ -85,14 +87,21 @@ h1{
 }
 #result{   
     font-family: waterfall;
-    padding: 10px;
+    width: 502px;
+    height: 53px;
+text-align: right;
+    padding: 0;
     font-size: 3rem;
     font-weight:500;
+    background-color: #333;
+    color: white;
 }
+
+
 #container{
     padding: 10px 0 10px 0;
     width: 508px;
-    height: 511px;
+    height: 497px;
     background-color: #333;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
@@ -116,8 +125,9 @@ h1{
 }
 .iqual{
     font-size: larger;
+    
 }
-    #keysContainer div :hover,  #keysContainer p :hover{
+#keysContainer div :hover,  #keysContainer p :hover{
     background-color: rgb(73, 73, 73);
 }
 
@@ -127,6 +137,17 @@ h1{
     height: 40px;
 }
 #backspace{
-    padding-top: 15px;
-    padding-bottom: 10px;
+    width: 125px;
+    height: 65px;
+    background-color: #333;
+    padding: 0 10px 0 0;
+    border: solid 1px #333;
+}
+#backspace :hover{
+    width: 125px;
+    height: 40px;
+    background-color:  rgb(73, 73, 73);
+}
+.fa-delete-left{
+color: white;
 }
