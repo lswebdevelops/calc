@@ -13,6 +13,7 @@ buttons.map( button => {
             default:
                 display.innerText += e.target.innerText;
         }
+        console.log(display.innerText);
     });
 });
 //creating a backspace button 
@@ -36,5 +37,7 @@ document.onkeydown = function(evt) {
         display.innerText = display.innerText.slice(0, -1);
     }
 };
-// adding a key press listener for each digit: [0-9] 
-
+class Calculator {
+    constructor(previousOperandTextElement, )
+}
+// starting to list the events: 
