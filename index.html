@@ -11,41 +11,32 @@
 </head>
 <body>
     
-
-    <div id="container">
-        <div id="nav"><h1>Calculator</h1>
-            <div id="display"></div>
-            <!-- it can take 23 digits     -->
-            <div id="result">0123456</div>  <!-- end of result -->
-
-            
-        </div><!-- end nav -->
+    <div id="container" class="calculator-grid">
+        <div id="nav" class="output"><h1>Calculator</h1>
+          <div id="display"  data-previous-operand class="previous-operand"></div>
+          <div id="result" data-current-operand class="current-operand"></div>       
+    </div><!-- end nav -->
         <!-- starting keys -->
         <div class="buttons" id="keysContainer">
-            <div class="button keys"       ><p>%</p></div>
-            <div class="button keys"       ><p>CE</p></div>
-            <div class="button keys"       ><p>1/x</p></div>
-            <div class="button keys"       ><button id="backspace"><p> <i class="fa-duotone fa-delete-left fa fa-2x"></i></p></button></div>
-            <div class="button keys"       ><p>x²</p></div>
-            <div class="button keys"       ><p>x³</p></div>
-            <div class="button keys"       ><p>²√x</p></div>
-            <div class="button keys"       ><p>÷</p></div>
-            <div class="button keys digits"><p>7</p></div>
-            <div class="button keys digits"><p>8</p></div>
-            <div class="button keys digits"><p>9</p></div>
-            <div class="button keys"       ><p>x</p></div>
-            <div class="button keys digits"><p>4</p></div>
-            <div class="button keys digits"><p>5</p></div>
-            <div class="button keys digits"><p>6</p></div>
-            <div class="button keys"       ><p>-</p></div>
-            <div class="button keys digits"><p>1</p></div>
-            <div class="button keys digits"><p>2</p></div>
-            <div class="button keys digits"><p>3</p></div>
-            <div class="button keys"       ><p>+</p></div>
-            <div class="button keys digits"><p>+/-</p></div>
-            <div class="button keys digits"><p>0</p></div>
-            <div class="button keys digits"><p>.</p></div>
-            <div class="button keys"       ><p class="iqual">=</p></div>
+            
+            <div  data-all-clear  class="ce_iqualsRow button keys span-two"><p id="p2">CE</p></div>
+            <div data-delete class=" button keys"><button id="backspace"><p id="p1"> <i class="fa-duotone fa-delete-left fa fa-2x"></i></p></button></div>
+            <div  data-operation class="button keys"       ><p id="p1">÷</p></div>
+            <div  data-number class="button keys digits"><p id="p1">7</p></div>
+            <div  data-number class="button keys digits"><p id="p1">8</p></div>
+            <div  data-number class="button keys digits"><p id="p1">9</p></div>
+            <div  data-operation  class="button keys"       ><p id="p1">*</p></div>
+            <div  data-number class="button keys digits"><p id="p1">4</p></div>
+            <div data-number  class="button keys digits"><p id="p1"></p>5</p></div>
+            <div  data-number class="button keys digits"><p id="p1">6</p></div>
+            <div  data-operation class="button keys"       ><p id="p1">-</p></div>
+            <div  data-number class="button keys digits"><p id="p1">1</p></div>
+            <div  data-number class="button keys digits"><p id="p1">2</p></div>
+            <div  data-number class="button keys digits"><p id="p1">3</p></div>
+            <div data-operation class="button keys"       ><p id="p1">+</p></div>
+            <div  data-number class="button keys digits"><p id="p1">.</p></div>
+            <div  data-number class="button keys digits"><p id="p1">0</p></div>
+            <div  data-equals  class=" ce_iqualsRow button keys iqual span-two"><p id="p2">=</p></div>
             
         </div>        <!-- end keyContainer -->
     </div>
